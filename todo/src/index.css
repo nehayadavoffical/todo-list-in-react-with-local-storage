@@ -1,0 +1,227 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+ *, *:before, *:after {
+	 box-sizing: border-box;
+}
+ ::-webkit-scrollbar {
+	 width: 0;
+}
+ body, input, button {
+	 font-family: 'Montserrat', sans-serif;
+}
+ body {
+	 height: 100vh;
+}
+ input, select {
+	 color: gray;
+	 margin: 0 5px;
+	 border: none;
+	 padding: 5px;
+	 outline: none;
+	 background: none;
+	 border-bottom: solid 2px lightgray;
+}
+ input:focus, select:focus {
+	 color: #53a7ee;
+	 border-bottom-color: #53a7ee;
+}
+ select {
+	 color: #53a7ee;
+}
+ button {
+	 color: white;
+	 cursor: pointer;
+	 border: none;
+	 padding: 5px;
+	 background: #53a7ee;
+}
+ #app {
+	 height: 100vh;
+	 display: flex;
+	 margin: auto;
+	 max-width: 500px;
+	 background: white;
+	 box-shadow: 0 0 20px 1px #9e9e9e;
+	 flex-direction: column;
+}
+ header {
+	 height: 200px;
+	 display: flex;
+	 position: relative;
+	 background: url('https://images.pexels.com/photos/756799/pexels-photo-756799.jpeg?h=350&auto=compress&cs=tinysrgb') no-repeat center center;
+	 background-size: cover;
+}
+ header > * {
+	 flex: 1;
+}
+ .task-completion {
+	 color: #d1d1d1;
+	 right: 20px;
+	 bottom: 12px;
+	 position: absolute;
+	 font-size: 14px;
+	 font-weight: 100;
+}
+ .date {
+	 padding: 0 0 10px 10px;
+	 border-bottom: solid 4px #53a7ee;
+}
+ .date p {
+	 color: white;
+	 height: 100%;
+	 display: flex;
+	 font-size: 40px;
+	 margin-top: 0;
+	 flex-direction: column;
+	 justify-content: flex-end;
+}
+ .date p span {
+	 color: #d1d1d1;
+	 font-size: 13px;
+	 font-weight: initial;
+}
+ .type-of-tasks {
+	 display: flex;
+	 background: linear-gradient(0deg, rgba(0, 0, 60, .6), rgba(0, 0, 0, .3));
+	 padding-right: 10px;
+	 justify-content: flex-end;
+}
+ .type-of-tasks p {
+	 color: white;
+	 display: flex;
+	 font-size: 40px;
+	 align-self: center;
+	 align-items: flex-end;
+	 margin-left: 10px;
+	 margin-right: 10px;
+	 flex-direction: column;
+}
+ .type-of-tasks p span {
+	 color: #d1d1d1;
+	 font-size: 13px;
+}
+/* SEARCH FIELD */
+ #search-field {
+	 padding: 10px 10px;
+	 display: inline-block;
+	 margin-right: auto;
+	 position: relative;
+}
+ #search-field .fa-search {
+	 position: absolute;
+	 right: 5px;
+	 top: 50%;
+	 transform: translate(0, -50%) rotate(90deg);
+	 color: #b8b8b8;
+}
+ #search-field input {
+	 color: #53a7ee;
+	 width: 100%;
+	 font-size: 14px;
+}
+ ::-webkit-input-placeholder {
+	 color: lightgray;
+	 font-style: italic;
+}
+/* TASKS */
+ ul {
+	 padding: 0 10px;
+	 list-style: none;
+	 overflow-y: scroll;
+}
+ ul li {
+	 padding: 10px 0 10px 15px;
+	 border-bottom: solid 1px lightgray;
+}
+ ul li:last-child {
+	 border-bottom: none;
+}
+ ul li div {
+	 display: flex;
+	 align-items: center;
+}
+ ul li div p {
+	 margin: 0 auto 0 0;
+	 display: flex;
+	 font-size: 19px;
+	 flex-direction: column;
+}
+ ul li div p span {
+	 color: #9e9e9e;
+	 font-size: 13px;
+	 margin-top: 2px;
+}
+ ul li div button {
+	 color: #53a7ee;
+	 margin: 0 10px;
+	 background: none;
+}
+/* ADD TASK FORM */
+ #add-task-form {
+	 height: 55px;
+	 padding: 10px;
+	 display: flex;
+	 margin-top: auto;
+}
+ #add-task-form > * {
+	 flex: 1;
+}
+ #add-task-form button {
+	 color: white;
+	 padding: 5px;
+}
+ #add-task-form button:hover {
+	 background: #258fe9;
+}
+ #edit-task-form {
+	 padding: 0 8px 0 0;
+	 display: flex;
+}
+ #edit-task-form input {
+	 flex: 1;
+}
+ #edit-task-form button {
+	 color: white;
+}
+ ul li button:hover:not(.delete-btn) {
+	 color: #157ad1;
+}
+/* CLASSES */
+ .completed {
+	 color: red;
+}
+ .delete-btn:hover {
+	 color: red;
+}
+ .disable-btn {
+	 color: gray;
+	 cursor: not-allowed;
+	 opacity: 0.2;
+}
+ 
